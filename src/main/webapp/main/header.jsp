@@ -15,7 +15,7 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="../main/main.do">Home</a></li>
       <li><a href="../main/goods.do">스토어</a></li>
-      <li><a href="#" style="color: blue">답변형 게시판</a></li>
+      <li><a href="#" style="color: red">답변형 게시판</a></li>
       <li><a href="#" style="color: blue">마이페이지</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
