@@ -25,8 +25,8 @@
 	        </td>
 	      </tr>
 	      <tr>
-	        <td width="15%" style="color: gray">주소</td>
-	        <td width="55%">${vo.address }</td>
+	        <td width="15%" style="color: red">주소</td>
+	        <td width="55%" >${vo.address }</td>
 	      </tr>
 	      <tr>
 	        <td width="15%" style="color: gray">전화</td>
