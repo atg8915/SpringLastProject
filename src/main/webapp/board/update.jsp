@@ -18,25 +18,20 @@ h3{
 <body>
   <div class="container">
     <div class="row">
-      <h3>글쓰기</h3>
-      <form method="post" action="../board/insert_ok.do">
+      <h3>수정하기</h3>
+      <form method="post" action="../board/update_ok.do">
       <table class="table">
-        <tr>
-          <th width="15%" class="text-center success">이름</th>
-          <td width="85%">
-            <input type="text" name="name" size=20 class="input-sm" required>
-          </td>
-        </tr>
         <tr>
           <th width="15%" class="text-center success">제목</th>
           <td width="85%">
-            <input type="text" name="subject" size=60 class="input-sm" required>
+            <input type="text" name="subject" size=60 class="input-sm" value="${vo.subject }" required>
+            <input type="hidden" name=no value="${vo.no }">
           </td>
         </tr>
         <tr>
           <th width="15%" class="text-center success">내용</th>
           <td width="85%">
-            <textarea rows="10" cols="62" name="content" required></textarea>
+            <textarea rows="10" cols="62" name="content" required>${vo.content }</textarea>
           </td>
         </tr>
         <tr>
@@ -47,13 +42,13 @@ h3{
         </tr>
         <tr>
           <td colspan="2" class="text-center">
-            <button class="btn-sm btn-danger" type="submit">글쓰기</button>
+            <button class="btn-sm btn-danger" type="submit">수정</button>
             <button class="btn-sm btn-danger" type="button" onclick="javascript:history.back()">취소</button>
           </td>
         </tr>
       </table>
       </form>
-    </div>
+    </div>   
   </div>
 </body>
 </html>

@@ -12,5 +12,5 @@ public interface BoardService {
 
 	public void boardReplyInsert(int pno,BoardVO vo);
 
-	
+	public void  boardUpdate(BoardVO vo);
 }

@@ -63,6 +63,12 @@ public class BoardServiceImpl implements BoardService{
 		
 		mapper.boardDepthIncrement(pno);
 	}
+
+	@Override
+	public void boardUpdate(BoardVO vo) {
+		// TODO Auto-generated method stub
+		mapper.boardUpdate(vo);
+	}
 	
 	
 }

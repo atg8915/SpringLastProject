@@ -75,5 +75,9 @@ public interface BoardMapper {
 	 *   depth : 답변이 몇개인지 확인
 	 */
 	// 수정
+	@Update("UPDATE springReplyBoard SET "
+			+ "subject=#{subject}, content=#{content} "
+			+ "WHERE no=#{no}")
+	public void  boardUpdate(BoardVO vo);
 	// 삭제    ===> Transaction
 }
